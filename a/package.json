@@ -9,6 +9,9 @@
     "build": "echo building...",
     "postinstall": "echo installed..."
   },
+  "dependencies": {
+    "lodash": "*"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
