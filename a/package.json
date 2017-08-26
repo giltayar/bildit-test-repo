@@ -1,17 +1,10 @@
 {
   "name": "@bildit/test-repo-a",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "",
   "main": "a.js",
-  "scripts": {
-    "test": "echo testing...",
-    "build": "echo building...",
-    "postinstall": "echo installed..."
-  },
-  "dependencies": {
-    "lodash": "*"
-  },
+  "scripts": {},
+  "dependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
