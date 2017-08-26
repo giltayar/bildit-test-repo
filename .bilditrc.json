@@ -1,18 +1,23 @@
 {
   "plugins": {
-    "registry": {
-      "agent": {
-        "@bildit/local-docker-agent": {
-          "npm": {
-            "image": "node:alpine",
-            "user": "node",
-            "workdir": "/home/node"
-          },
-          "repository": {
-            "image": "alpine"
-          }
+    "agent": {
+      "@bildit/local-docker-agent": {
+        "npm": {
+          "image": "node:alpine",
+          "user": "node",
+          "workdir": "/home/node"
+        },
+        "repository": {
+          "image": "alpine"
         }
       }
-    }
-  }
+    },
+    "builder:npm": {
+      "@bildit/npm-build-job": {
+        "authenticationLine": "//registry.npmjs.org/:_authToken=faf41d9d-7071-4a7a-9369-d5a85d1017c0"
+      }
+    },
+    "publisher:npm": {"@bildit/npm-publisher-with-git": {}}
+  },
+  "publish": false
 }
