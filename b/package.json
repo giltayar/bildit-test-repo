@@ -1,6 +1,5 @@
 {
   "name": "@bildit/test-repo-b",
-  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "b.js",
