@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bildit/test-repo-a": "^1.0.0"
+    "@bildit/test-repo-a": "^1.0.13"
   }
 }
