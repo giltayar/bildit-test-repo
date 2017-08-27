@@ -3,24 +3,20 @@ const path = require('path')
 
 module.exports = {
   plugins: {
-    agent: {
+    "agent:npm": {
       "@bildit/local-docker-agent": {
-        npm: {
-          image: "giltayar/node-alpine-git",
-          user: "node",
-          workdir: "/home/node/builddir"
-        },
-        repository: {
-          image: "alpine"
-        }
+        image: "giltayar/node-alpine-git",
+        user: "node",
+        workdir: "/home/node/builddir"
+      }
+    },
+    "agent:repository": {
+      "@bildit/local-docker-agent": {
+        image: "alpine"
       }
     },
     "builder:npm": "@bildit/npm-build-job",
     "publisher:npm": {"@bildit/npm-publisher-with-git": {
-      npmAuthenticationLine: "//registry.npmjs.org/:_authToken=faf41d9d-7071-4a7a-9369-d5a85d1017c0",
-      gitAuthenticationKey: fs.readFileSync(path.join(process.env.HOME, '.ssh/id_rsa_github')),
-      gitUserEmail: 'gil@tayar.org',
-      gitUserName: 'Gil Tayar',
       access: 'public'
     }}
   },
