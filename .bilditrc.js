@@ -12,7 +12,7 @@ module.exports = {
     },
     "agent:repository": {
       "@bildit/local-docker-agent": {
-        image: "alpine"
+        image: "node:alpine"
       }
     },
     "builder:npm": "@bildit/npm-build-job",
