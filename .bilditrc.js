@@ -4,15 +4,17 @@ const path = require('path')
 module.exports = {
   plugins: {
     "agent:npm": {
-      "@bildit/local-docker-agent": {
+      "@bildit/remote-docker-agent": {
         image: "giltayar/node-alpine-git",
         user: "node",
         workdir: "/home/node/builddir"
       }
     },
     "agent:repository": {
-      "@bildit/local-docker-agent": {
-        image: "node:alpine"
+      "@bildit/remote-docker-agent": {
+        image: "giltayar/node-alpine-git",
+        user: "node",
+        workdir: "/home/node/builddir"
       }
     },
     "builder:npm": "@bildit/npm-build-job",
