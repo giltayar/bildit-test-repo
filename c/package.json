@@ -1,5 +1,5 @@
 {
-  "name": "@bildit/test-repo-c",
+  "name": "@bilt/test-repo-c",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bildit/test-repo-a": "^1.0.0"
+    "@bilt/test-repo-a": "^1.0.0"
   }
 }
