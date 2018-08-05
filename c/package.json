@@ -9,10 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-    "@bilt/test-repo-a": "^1.0.0"
-=======
     "@bilt/test-repo-a": "^1.0.51"
->>>>>>> kalal
   }
 }
