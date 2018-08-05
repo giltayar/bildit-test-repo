@@ -1,6 +1,6 @@
 {
   "name": "@bilt/test-repo-b",
-  "version": "1.0.10",
+  "version": "1.0.25",
   "description": "",
   "main": "b.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bilt/test-repo-a": "^1.0.0"
+    "@bilt/test-repo-a": "^1.0.50"
   }
 }
