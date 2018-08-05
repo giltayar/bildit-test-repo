@@ -1,6 +1,6 @@
 {
   "name": "@bilt/test-repo-b",
-  "version": "1.0.25",
+  "version": "1.0.30",
   "description": "",
   "main": "b.js",
   "scripts": {
